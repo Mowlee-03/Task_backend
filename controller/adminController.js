@@ -50,7 +50,7 @@ const LoginAdmin=async (req,res) => {
                 message:"Incorrect Email Please Check Your Email"
             })
         }
-        const ispasswordValid=verifyPasword(password,findadmin.password)
+        const ispasswordValid=await verifyPasword(password,findadmin.password)
         if (!ispasswordValid) {
             return res.status(400).json({
                 status:400,
