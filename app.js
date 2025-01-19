@@ -17,7 +17,7 @@ app.set('view engine', 'jade');
 
 
 app.use(cors({
-  origin:['https://admindashboard-topaz.vercel.app','https://userdashboard-mu.vercel.app']
+  origin:["https://admindashboard-teal.vercel.app","https://userdashboard-eight.vercel.app","http://localhost:3000"]
 }));
 
 app.use(logger('dev'));
